@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "name": "typescript-backend-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SBalint2002/regex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SBalint2002/regex/issues"
+  },
+  "homepage": "https://github.com/SBalint2002/regex#readme"
+}
