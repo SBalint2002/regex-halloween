@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head lang="hu">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="dist/main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form">
+        <table id="tabla">
+            <tr>
+              <td><label id="nevlabel">Teljes név:</label></td>
+              <td>
+                <input type="text" id="nev" />
+              </td>
+            </tr>
+            <tr>
+              <td><label id="orszaglabel">Ország:</label></td>
+              <td>
+                <input type="text" id="orszag" />
+              </td>
+            </tr>
+            <tr>
+              <td><label id="varoslabel">Város:</label></td>
+              <td>
+                <input type="text" id="varos" />
+              </td>
+            </tr>
+            <tr>
+              <td><label id="utcahszlabel">Utca, házszám:</label></td>
+              <td>
+                <input type="text" id="utcahsz" />
+              </td>
+            </tr>
+            <tr>
+              <td><label id="irszlabel">Irányítószám:</label></td>
+              <td>
+                <input type="text" id="irsz" />
+              </td>
+            </tr>
+            <tr>
+              <td><label id="kartyaszamlabel">Bankkártya-szám:</label></td>
+              <td>
+                <input type="text" id="kartyaszam" />
+              </td>
+            </tr>
+            <tr>
+              <td><label id="kodlabel">Ellenőrző kód:</label></td>
+              <td>
+                <input type="number" id="kod" />
+              </td>
+            </tr>
+            <tr>
+              <td><label id="kartyanevlabel">Bankkártyára írt név:</label></td>
+              <td>
+                <input type="text" id="kartyanev" />
+              </td>
+            </tr>
+          </table>
+          <button id="fizetes">Fizetés</button>
+    </div>
+    <h1 id="siker"></h1>
+  </body>
 </html>
