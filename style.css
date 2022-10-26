@@ -1,17 +1,47 @@
+body{
+    background-color: orange;
+    background-image: linear-gradient(to right, orange , yellow);
+}
+
 #siker{
     color: green;
+    text-align: center;
+}
+
+#fizetes{
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    margin: 25px 10px;
+    color: blue;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #form {
-    background-color: gray;
-    width: 50%;
+    margin-top: 10vh;
+    margin-bottom: auto;
+    width: 30%;
+    min-height: 60vh;
+    background-color: lightblue;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    min-height: 100vh;
+    z-index: 2;
+    box-shadow: 5px 10px 8px #888888;
 }
 
 #tabla{
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#cim {
+    padding-top: 20px;
+    text-align: center;
 }

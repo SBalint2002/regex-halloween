@@ -11,58 +11,63 @@
   </head>
   <body>
     <div id="form">
+        <h1 id="cim">Fizetés</h1>
         <table id="tabla">
             <tr>
               <td><label id="nevlabel">Teljes név:</label></td>
               <td>
-                <input type="text" id="nev" />
+                <input type="text" id="nev" placeholder="Falhasználónév"/>
               </td>
             </tr>
             <tr>
               <td><label id="orszaglabel">Ország:</label></td>
               <td>
-                <input type="text" id="orszag" />
+                <input type="text" id="orszag" placeholder="Ország"/>
               </td>
             </tr>
             <tr>
               <td><label id="varoslabel">Város:</label></td>
               <td>
-                <input type="text" id="varos" />
+                <input type="text" id="varos" placeholder="Város"/>
               </td>
             </tr>
             <tr>
               <td><label id="utcahszlabel">Utca, házszám:</label></td>
               <td>
-                <input type="text" id="utcahsz" />
+                <input type="text" id="utcahsz" placeholder="Utca, házszám"/>
               </td>
             </tr>
             <tr>
               <td><label id="irszlabel">Irányítószám:</label></td>
               <td>
-                <input type="text" id="irsz" />
+                <input type="text" id="irsz" placeholder="Irányítószám"/>
               </td>
             </tr>
             <tr>
               <td><label id="kartyaszamlabel">Bankkártya-szám:</label></td>
               <td>
-                <input type="text" id="kartyaszam" />
+                <input type="text" id="kartyaszam" placeholder="Kártyaszám"/>
               </td>
             </tr>
             <tr>
               <td><label id="kodlabel">Ellenőrző kód:</label></td>
               <td>
-                <input type="number" id="kod" />
+                <input type="number" id="kod" placeholder="CVV"/>
               </td>
             </tr>
             <tr>
               <td><label id="kartyanevlabel">Bankkártyára írt név:</label></td>
               <td>
-                <input type="text" id="kartyanev" />
+                <input type="text" id="kartyanev" placeholder="Kártyán szereplő név"/>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button id="fizetes">Fizetés</button>
               </td>
             </tr>
           </table>
-          <button id="fizetes">Fizetés</button>
+          <h1 id="siker"></h1>
     </div>
-    <h1 id="siker"></h1>
   </body>
 </html>
