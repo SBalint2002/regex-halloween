@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!nevPattern.test(document.getElementById('nev').value)) {
             rosszAdat(document.getElementById('nevlabel'));
             ellenorzo = false;
+            console.log("szarnev");
         }
         else {
             joAdat(document.getElementById('nevlabel'));
@@ -94,6 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
         adat.style.color = "red";
     }
     function joAdat(adat) {
-        adat.style.color = "black";
+        adat.style.color = "white";
     }
 });
