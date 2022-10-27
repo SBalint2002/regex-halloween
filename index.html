@@ -7,58 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="dist/main.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <img src="./pictures/toklogo.png" alt="toklogo" id="toklogo">
-    <div id="form" class="col-sm-6">
-        <h1 id="cim">Fizetés</h1>
-        <table id="tabla">
+    <div class="container">
+      <div class="row"><img src="./pictures/toklogo.png" alt="toklogo" id="toklogo" /></div>
+      <div class="row">
+        <div class="col-2 col-sm-2 col-md-3 col-lg-4"></div>
+        <div class="col-8 col-sm-8 col-md-6 col-lg-4" id="form">
+          <h1 id="cim">Fizetés</h1>
+          <table id="tabla">
             <tr>
               <td><label id="nevlabel">Teljes név:</label></td>
               <td>
-                <input type="text" class="form-control" id="nev" placeholder="Falhasználónév"/>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nev"
+                  placeholder="Falhasználónév"
+                />
               </td>
             </tr>
             <tr>
               <td><label id="orszaglabel">Ország:</label></td>
               <td>
-                <input type="text" id="orszag" placeholder="Ország"/>
+                <input type="text" id="orszag" placeholder="Ország" />
               </td>
             </tr>
             <tr>
               <td><label id="varoslabel">Város:</label></td>
               <td>
-                <input type="text" id="varos" placeholder="Város"/>
+                <input type="text" id="varos" placeholder="Város" />
               </td>
             </tr>
             <tr>
               <td><label id="utcahszlabel">Utca, házszám:</label></td>
               <td>
-                <input type="text" id="utcahsz" placeholder="Utca, házszám"/>
+                <input type="text" id="utcahsz" placeholder="Utca, házszám" />
               </td>
             </tr>
             <tr>
               <td><label id="irszlabel">Irányítószám:</label></td>
               <td>
-                <input type="text" id="irsz" placeholder="Irányítószám"/>
+                <input type="text" id="irsz" placeholder="Irányítószám" />
               </td>
             </tr>
             <tr>
               <td><label id="kartyaszamlabel">Bankkártya-szám:</label></td>
               <td>
-                <input type="text" id="kartyaszam" placeholder="Kártyaszám"/>
+                <input type="text" id="kartyaszam" placeholder="Kártyaszám" />
               </td>
             </tr>
             <tr>
               <td><label id="kodlabel">Ellenőrző kód:</label></td>
               <td>
-                <input type="number" id="kod" placeholder="CVV"/>
+                <input type="number" id="kod" placeholder="CVV" />
               </td>
             </tr>
             <tr>
-              <td><label id="kartyanevlabel">Bankkártyára írt név:</label></td>
               <td>
-                <input type="text" id="kartyanev" placeholder="Kártyán szereplő név"/>
+                <label id="kartyanevlabel">Bankkártyára írt név:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="kartyanev"
+                  placeholder="Kártyán szereplő név"
+                />
               </td>
             </tr>
             <tr>
@@ -68,6 +93,9 @@
             </tr>
           </table>
           <h1 id="siker"></h1>
+        </div>
+        <div class="col-2 col-sm-2 col-md-3 col-lg-4"></div>
+      </div>
     </div>
   </body>
 </html>

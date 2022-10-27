@@ -40,9 +40,6 @@ body{
 #form {
     white-space:nowrap;
     margin-bottom: auto;
-    width: 30%;
-    min-width: 30vh;
-    min-height: 60vh;
     background-color: black;
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +70,7 @@ body{
 
 #toklogo {
     margin-top: 10vh;
-    width: 5%;
+    width: 8%;
     position: relative;
     display: block;
     margin-left: auto;

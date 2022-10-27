@@ -1,7 +1,7 @@
-let nevPattern = /^[a-zA-Z]+$/;
-let orszagPattern = /^[a-zA-Z]+$/;
-let varosPattern = /^[a-zA-Z]+$/;
-let utcahszPattern = /^[a-zA-Z]{1,}[ ][1-9]*$/;
+let nevPattern = /^\p{L}+$/iu;
+let orszagPattern = /^\p{L}+$/iu;
+let varosPattern = /^\p{L}+$/iu;
+let utcahszPattern = /^\p{L}+$/iu;
 let irszPattern = /^[0-9A-Z]{1,}$/;
 let kartyaszamPattern = /^[0-9]{4}-{1}[0-9]{4}-{1}[0-9]{4}-{1}[0-9]{4}$/;
 let kodPattern = /^[0-9]{3}$/;
