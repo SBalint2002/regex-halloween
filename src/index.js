@@ -10,91 +10,91 @@ let kartyanevPattern = /^[a-zA-Z ]{1,}$/;
 document.addEventListener('DOMContentLoaded', () => {
     var _a;
     (_a = document.getElementById('fizetes')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', () => {
-        var _a;
+        var _a, _b;
         let ellenorzo = false;
         //felhnev
         if (!nevPattern.test(document.getElementById('nev').value)) {
-            rosszAdat(document.getElementById('nevlabel'));
+            rosszAdat(document.getElementById('nev'));
             ellenorzo = false;
-            console.log("szarnev");
         }
         else {
-            joAdat(document.getElementById('nevlabel'));
+            joAdat(document.getElementById('nev'));
             ellenorzo = true;
         }
         //Ország
         if (!orszagPattern.test(document.getElementById('orszag').value)) {
-            rosszAdat(document.getElementById('orszaglabel'));
+            rosszAdat(document.getElementById('orszag'));
             ellenorzo = false;
         }
         else {
-            joAdat(document.getElementById('orszaglabel'));
+            joAdat(document.getElementById('orszag'));
             ellenorzo = true;
         }
         //Város
         if (!varosPattern.test(document.getElementById('varos').value)) {
-            rosszAdat(document.getElementById('varoslabel'));
+            rosszAdat(document.getElementById('varos'));
             ellenorzo = false;
         }
         else {
-            joAdat(document.getElementById('varoslabel'));
+            joAdat(document.getElementById('varos'));
             ellenorzo = true;
         }
         //Utca házszám
         if (!utcahszPattern.test(document.getElementById('utcahsz').value)) {
-            rosszAdat(document.getElementById('utcahszlabel'));
+            rosszAdat(document.getElementById('utcahsz'));
             ellenorzo = false;
         }
         else {
-            joAdat(document.getElementById('utcahszlabel'));
+            joAdat(document.getElementById('utcahsz'));
             ellenorzo = true;
         }
         //Irányítószám
         if (!irszPattern.test(document.getElementById('irsz').value)) {
-            rosszAdat(document.getElementById('irszlabel'));
+            rosszAdat(document.getElementById('irsz'));
             ellenorzo = false;
         }
         else {
-            joAdat(document.getElementById('irszlabel'));
+            joAdat(document.getElementById('irsz'));
             ellenorzo = true;
         }
         //Bankkártya
         if (!kartyaszamPattern.test(document.getElementById('kartyaszam').value)) {
-            rosszAdat(document.getElementById('kartyaszamlabel'));
+            rosszAdat(document.getElementById('kartyaszam'));
             ellenorzo = false;
         }
         else {
-            joAdat(document.getElementById('kartyaszamlabel'));
+            joAdat(document.getElementById('kartyaszam'));
             ellenorzo = true;
         }
         //Kód
         if (!kodPattern.test(document.getElementById('kod').value)) {
-            rosszAdat(document.getElementById('kodlabel'));
+            rosszAdat(document.getElementById('kod'));
             ellenorzo = false;
         }
         else {
-            joAdat(document.getElementById('kodlabel'));
+            joAdat(document.getElementById('kod'));
             ellenorzo = true;
         }
         //Kártyán szereplő név
         if (!kartyanevPattern.test(document.getElementById('kartyanev').value)) {
-            rosszAdat(document.getElementById('kartyanevlabel'));
+            rosszAdat(document.getElementById('kartyanev'));
             ellenorzo = false;
         }
         else {
-            joAdat(document.getElementById('kartyanevlabel'));
+            joAdat(document.getElementById('kartyanev'));
             ellenorzo = true;
         }
         //Űrlap törlése
         if (ellenorzo == true) {
-            (_a = document.getElementById('tabla')) === null || _a === void 0 ? void 0 : _a.remove();
+            (_a = document.getElementById('eltunes')) === null || _a === void 0 ? void 0 : _a.remove();
+            (_b = document.getElementById('fizetes')) === null || _b === void 0 ? void 0 : _b.remove();
             document.getElementById('siker').innerHTML = "Sikeres fizetés!";
         }
     });
     function rosszAdat(adat) {
-        adat.style.color = "red";
+        adat.style.border = "1px solid red";
     }
     function joAdat(adat) {
-        adat.style.color = "white";
+        adat.style.border = "1px solid #ced4da";
     }
 });

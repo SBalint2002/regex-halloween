@@ -14,90 +14,89 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         //felhnev
         if(!nevPattern.test((document.getElementById('nev') as HTMLInputElement).value)){
-            rosszAdat(document.getElementById('nevlabel') as HTMLElement);
+            rosszAdat(document.getElementById('nev') as HTMLInputElement);
             ellenorzo = false;
-            console.log("szarnev");
         }else {
-            joAdat(document.getElementById('nevlabel') as HTMLElement);
+            joAdat(document.getElementById('nev') as HTMLInputElement);
             ellenorzo = true;
         }
 
         //Ország
         if(!orszagPattern.test((document.getElementById('orszag') as HTMLInputElement).value)){
-            rosszAdat(document.getElementById('orszaglabel') as HTMLElement);
+            rosszAdat(document.getElementById('orszag') as HTMLInputElement);
             ellenorzo = false;
         }else {
-            joAdat(document.getElementById('orszaglabel') as HTMLElement);
+            joAdat(document.getElementById('orszag') as HTMLInputElement);
             ellenorzo = true;
         }
 
         //Város
         if(!varosPattern.test((document.getElementById('varos') as HTMLInputElement).value)){
-            rosszAdat(document.getElementById('varoslabel') as HTMLElement);
+            rosszAdat(document.getElementById('varos') as HTMLInputElement);
             ellenorzo = false;
         }else {
-            joAdat(document.getElementById('varoslabel') as HTMLElement);
+            joAdat(document.getElementById('varos') as HTMLInputElement);
             ellenorzo = true;
         }
 
         //Utca házszám
         if(!utcahszPattern.test((document.getElementById('utcahsz') as HTMLInputElement).value)){
-            rosszAdat(document.getElementById('utcahszlabel') as HTMLElement);
+            rosszAdat(document.getElementById('utcahsz') as HTMLInputElement);
             ellenorzo = false;
         }else {
-            joAdat(document.getElementById('utcahszlabel') as HTMLElement);
+            joAdat(document.getElementById('utcahsz') as HTMLInputElement);
             ellenorzo = true;
         }
 
         //Irányítószám
         if(!irszPattern.test((document.getElementById('irsz') as HTMLInputElement).value)){
-            rosszAdat(document.getElementById('irszlabel') as HTMLElement);
+            rosszAdat(document.getElementById('irsz') as HTMLInputElement);
             ellenorzo = false;
         }else {
-            joAdat(document.getElementById('irszlabel') as HTMLElement);
+            joAdat(document.getElementById('irsz') as HTMLInputElement);
             ellenorzo = true;
         }
 
         //Bankkártya
         if(!kartyaszamPattern.test((document.getElementById('kartyaszam') as HTMLInputElement).value)){
-            rosszAdat(document.getElementById('kartyaszamlabel') as HTMLElement);
+            rosszAdat(document.getElementById('kartyaszam') as HTMLInputElement);
             ellenorzo = false;
         }else {
-            joAdat(document.getElementById('kartyaszamlabel') as HTMLElement);
+            joAdat(document.getElementById('kartyaszam') as HTMLInputElement);
             ellenorzo = true;
         }
 
         //Kód
         if(!kodPattern.test((document.getElementById('kod') as HTMLInputElement).value)){
-            rosszAdat(document.getElementById('kodlabel') as HTMLElement);
+            rosszAdat(document.getElementById('kod') as HTMLInputElement);
             ellenorzo = false;
         }else {
-            joAdat(document.getElementById('kodlabel') as HTMLElement);
+            joAdat(document.getElementById('kod') as HTMLInputElement);
             ellenorzo = true;
         }
 
         //Kártyán szereplő név
         if(!kartyanevPattern.test((document.getElementById('kartyanev') as HTMLInputElement).value)){
-            rosszAdat(document.getElementById('kartyanevlabel') as HTMLElement);
+            rosszAdat(document.getElementById('kartyanev') as HTMLInputElement);
             ellenorzo = false;
         }else {
-            joAdat(document.getElementById('kartyanevlabel') as HTMLElement);
+            joAdat(document.getElementById('kartyanev') as HTMLInputElement);
             ellenorzo = true;
         }
 
         //Űrlap törlése
         if(ellenorzo == true){
-            document.getElementById('tabla')?.remove();
+            document.getElementById('eltunes')?.remove();
+            document.getElementById('fizetes')?.remove();
             (document.getElementById('siker') as HTMLElement).innerHTML = "Sikeres fizetés!"
         }
     });
 
-    function rosszAdat (adat : HTMLElement){
-        adat.style.color = "red";
+    function rosszAdat (adat : HTMLInputElement){
+        adat.style.border = "1px solid red";
     }
 
-    function joAdat(adat: HTMLElement){
-        adat.style.color = "white";
+    function joAdat(adat: HTMLInputElement){
+        adat.style.border = "1px solid #ced4da";
     }
-
 })
