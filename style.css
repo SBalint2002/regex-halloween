@@ -47,13 +47,6 @@ body{
     box-shadow: 5px 10px 8px #000000;
 }
 
-#tabla{
-    margin-top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    white-space: normal;
-}
-
 #cim {
     padding-top: 20px;
     font-size: 2.3em;
